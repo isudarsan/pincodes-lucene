@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package org.asnworks.apis.lucene.pincodes.exceptions;
 
 
@@ -12,9 +10,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-/**
- * @author sudambat
- */
+
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
@@ -22,6 +18,14 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(NoSuchPinCodeException.class)
     public ResponseEntity<Object> handleNoSuchPinCodeException(
         NoSuchPinCodeException ex) {
+        ApiError apiError = new ApiError(HttpStatus.NOT_FOUND);
+        apiError.setErrorMessage(ex.getMessage());
+        return buildResponseEntity(apiError);
+    }
+
+    @ExceptionHandler(NoSuchVillageException.class)
+    public ResponseEntity<Object> handleNoVillageException(
+        NoSuchVillageException ex) {
         ApiError apiError = new ApiError(HttpStatus.NOT_FOUND);
         apiError.setErrorMessage(ex.getMessage());
         return buildResponseEntity(apiError);

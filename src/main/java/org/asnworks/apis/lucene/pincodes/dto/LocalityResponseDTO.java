@@ -1,13 +1,8 @@
-/**
- * 
- */
+
 package org.asnworks.apis.lucene.pincodes.dto;
 
 import java.util.List;
 
-/**
- * @author sudambat
- */
 public class LocalityResponseDTO {
 
     private List<LocalityDTO> localities;
@@ -23,6 +18,5 @@ public class LocalityResponseDTO {
     public void setLocalities(List<LocalityDTO> localities) {
         this.localities = localities;
     }
-
 
 }

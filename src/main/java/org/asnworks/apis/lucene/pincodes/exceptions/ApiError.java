@@ -1,14 +1,9 @@
-/**
- * 
- */
+
 package org.asnworks.apis.lucene.pincodes.exceptions;
 
-import org.asnworks.apis.lucene.pincodes.Constants;
+import org.asnworks.apis.lucene.pincodes.constants.Constants;
 import org.springframework.http.HttpStatus;
 
-/**
- * @author sudambat
- */
 public class ApiError {
 
     private HttpStatus status;

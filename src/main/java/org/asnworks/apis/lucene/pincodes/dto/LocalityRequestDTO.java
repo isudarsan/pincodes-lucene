@@ -1,11 +1,6 @@
-/**
- * 
- */
+
 package org.asnworks.apis.lucene.pincodes.dto;
 
-/**
- * @author sudambat
- */
 public class LocalityRequestDTO {
 
     private String code;

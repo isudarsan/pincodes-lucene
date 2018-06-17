@@ -1,25 +1,34 @@
-
 package org.asnworks.apis.lucene.pincodes.domain;
 
+import org.apache.solr.client.solrj.beans.Field;
+import org.asnworks.apis.lucene.pincodes.constants.SolrConstants;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.solr.core.mapping.Indexed;
 import org.springframework.data.solr.core.mapping.SolrDocument;
 
-/***
- * @author Sudarshan
- */
-@SolrDocument()
+@SolrDocument(solrCoreName = SolrConstants.SOLR_CORE_NAME)
 public class PinCode implements java.io.Serializable {
 
     private static final long serialVersionUID = -2416436344701442703L;
 
+    @Id
+    private String id;
 
-    private Long id;
-
-
+    @Indexed(name = SolrConstants.VILLAGE_NAME)
     private String villageName;
+
     private String officeName;
+
+    @Indexed(name = SolrConstants.PIN_CODE)
     private String code;
+
+    @Field(value = SolrConstants.SUB_DISTRICT_NAME)
     private String subDistrictName;
+
+    @Indexed(name = SolrConstants.DISTRICT_NAME)
     private String districtName;
+
+    @Indexed(name = SolrConstants.STATE_NAME)
     private String stateName;
 
     public PinCode() {
@@ -35,11 +44,11 @@ public class PinCode implements java.io.Serializable {
         this.stateName = stateName;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

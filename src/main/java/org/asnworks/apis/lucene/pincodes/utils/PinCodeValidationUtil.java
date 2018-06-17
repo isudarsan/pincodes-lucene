@@ -1,16 +1,10 @@
-/**
- * 
- */
+
 package org.asnworks.apis.lucene.pincodes.utils;
 
-import org.asnworks.apis.lucene.pincodes.Constants;
+import org.asnworks.apis.lucene.pincodes.constants.Constants;
 import org.asnworks.apis.lucene.pincodes.dto.LocalityRequestDTO;
 import org.springframework.stereotype.Component;
 
-/**
- * @author sudambat
- *
- */
 @Component
 public class PinCodeValidationUtil {
 
