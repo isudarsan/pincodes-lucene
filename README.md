@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.com/isudarsan/pincodes-lucene.svg?branch=master)](https://travis-ci.com/isudarsan/pincodes-lucene)
+
 # pincodes-lucene
 Pincodes:Solr Implementation
 
