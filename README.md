@@ -1,5 +1,4 @@
-
-[![Build Status](https://travis-ci.com/isudarsan/pincodes-lucene.svg?branch=master)](https://travis-ci.com/isudarsan/pincodes-lucene)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/46dba76fdc85412a8e56de5d7b91cd79)](https://www.codacy.com/app/sudarsan.a/pincodes-lucene?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=isudarsan/pincodes-lucene&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.com/isudarsan/pincodes-lucene.svg?branch=master)](https://travis-ci.com/isudarsan/pincodes-lucene)
 
 # pincodes-lucene
 Pincodes:Solr Implementation
